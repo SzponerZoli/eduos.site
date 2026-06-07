@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#0f1117]">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eduOS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Mono:wght@400;500&display=swap">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['DM Sans', 'sans-serif'],
+                        mono: ['DM Mono', 'monospace'],
+                    },
+                    colors: {
+                        bg: '#0f1117',
+                        surface: '#111520',
+                        border: '#1e2a3a',
+                        accent: '#3d6fd4',
+                        'accent-hover': '#2d5cb8',
+                        muted: '#888888',
+                        dim: '#444444',
+                        faint: '#1e1e1e',
+                        body: '#e8e8e4',
+                    },
+                    letterSpacing: {
+                        tightest: '-0.03em',
+                        tighter: '-0.02em',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: DM Sans, sans-serif;
+            line-height: 1.55;
+        }
+
+        .mono {
+            font-family: DM Mono, monospace;
+        }
+    </style>
+</head>
+
+<body class="bg-bg text-body antialiased">
+    <div class="max-w-3xl mx-auto px-6">
+        <!--Navigation-->
+        <nav class="flex items-center justify-between py-6">
+            <span class="mono text-sm tracking-tight"><span class="text-accent">edu</span>OS</span>
+            <div class="flex gap-6 items-center">
+
+                <div class="relative inline-block group cursor-not-allowed">
+                    <a href="#" class="text-sm text-muted hover:text-body transition-colors pointer-events-none">
+                        Docs
+                    </a>
+                    <div
+                        class="absolute top-full left-1/2 -translate-x-1/2 mt-2 hidden group-hover:flex flex-col items-center z-50">
+                        <div class="w-1.5 h-1.5 bg-body rotate-45 -mb-0.5"></div>
+                        <span
+                            class="mono text-[9px] bg-body text-bg text-center whitespace-nowrap rounded px-1.5 py-0.5 tracking-wider uppercase font-medium shadow-md">
+                            Coming Soon
+                        </span>
+                    </div>
+                </div>
+
+                <a href="#roadmap" class="text-sm text-muted hover:text-body transition-colors">Roadmap</a>
+                <a href="https://github.com/SzponerZoli/eduOS"
+                    class="text-sm text-muted hover:text-body transition-colors">GitHub</a>
+            </div>
+        </nav>
+        <section class="pt-16 pb-16">
+            <div
+                class="inline-flex items-center gap-2 bg-surface border border-border rounded px-3 py-1 mono text-xs text-accent mb-8">
+                In development
+            </div>
+            <h1 class="text-5xl font-medium tracking-tightest leading-[1.1] text-body mb-5">
+                Linux<br> <span class="text-accent">for education.</span>
+            </h1>
+            <p class="text-lg text-muted max-w-xl mb-10" style="line-height:1.55">
+                A free, open-source OS built on Fedora Atomic. It installs in minutes, updates itself, and doesn't break
+                when
+                students use it.
+            </p>
+            <div class="flex items-center gap-4">
+                <a href="https://github.com/SzponerZoli/eduOS"
+                    class="bg-accent hover:bg-accent-hover text-white text-sm px-5 py-2.5 rounded-md transition-colors">
+                    View on GitHub
+                </a>
+
+                <div class="relative inline-block group cursor-not-allowed">
+                    <button
+                        class="bg-transparent text-muted border border-[#333] text-sm px-5 py-2.5 rounded-md transition-colors pointer-events-none">
+                        Read the docs
+                    </button>
+
+                    <div
+                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:flex flex-col items-center z-50">
+                        <span
+                            class="mono text-[10px] bg-body text-bg text-center whitespace-nowrap rounded px-2 py-0.5 tracking-wider uppercase font-medium shadow-md">
+                            Coming Soon
+                        </span>
+                        <div class="w-1.5 h-1.5 bg-body rotate-45 -mt-0.5"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="border-faint">
+        <section class="py-16">
+            <h2 class="text-2xl font-medium tracking-tighter text-body mb-3">The problem</h2>
+            <p class="text-base text-muted mb-10" style="line-height:1.55">
+                Most Hungarian schools run Windows on old hardware that can't upgrade to Windows 11. IT staff manage
+                each
+                machine separately. Students break things. Updates never happen.
+            </p>
+            <div class="grid grid-cols-3 gap-3">
+                <div class="bg-surface border border-border rounded-lg p-5">
+                    <div class="mono text-3xl font-medium text-accent tracking-tightest mb-1">$0</div>
+                    <div class="text-sm text-dim leading-snug">licensing cost, ever</div>
+                </div>
+                <div class="bg-surface border border-border rounded-lg p-5">
+                    <div class="mono text-3xl font-medium text-accent tracking-tightest mb-1">3</div>
+                    <div class="text-sm text-dim leading-snug">profiles for different purpose computers</div>
+                </div>
+                <div class="bg-surface border border-border rounded-lg p-5">
+                    <div class="mono text-3xl font-medium text-accent tracking-tightest mb-1">~2015</div>
+                    <div class="text-sm text-dim leading-snug">minimum hardware year (lite: ~2012)</div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-faint">
+
+        <section class="py-16">
+            <h2 class="text-2xl font-medium tracking-tighter text-body mb-3">
+                How it works
+            </h2>
+            <p class="text-base text-muted mb-10" style="line-height:1.55">
+                You pick a profile during installation. The righr software goes on the right machine. Updates happen in
+                the background
+            </p>
+            <div class="flex flex-col gap-6">
+                <div class="flex gap-5">
+                    <span class="mono text-sm text-accent min-w-[24px] mt-0.5">01</span>
+                    <div>
+                        <h3 class="text-[15px] font-medium text-body mb-1">Immutable base</h3>
+                        <p class="text-sm text-muted" style="line-height: 1.55">
+                            The system files are read only. A student can't delete something important or install
+                            malware. On reboot, everything is exactly as it should be.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-5">
+                    <span class="mono text-sm text-accent min-w-[24px] mt-0.5">02</span>
+                    <div>
+                        <h3 class="text-[15px] font-medium text-body mb-1">Automatic updates</h3>
+                        <p class="text-sm text-muted" style="line-height: 1.55">
+                            The os updates itself like a phone - no IT person needed. System software updates on boot,
+                            user apps update on login.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-5">
+                    <span class="mono text-sm text-accent min-w-[24px] mt-0.5">03
+                    </span>
+                    <div>
+                        <h3 class="text-[15px] font-medium text-body mb-1">Old hardware friendly</h3>
+                        <p class="text-sm text-muted" style="line-height: 1.55">
+                            The KDE variant runs well on machines from 2015 onwards. The Cinnamon Lite variant targets
+                            older that Windows 11 can't touch.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+        <hr class="border-faint">
+        <section class="py-16">
+            <h2 class="text-2xl font-medium tracking-tighter text-body mb-3">Profiles</h2>
+            <p class="text-base text-muted mb-10" style="line-height: 1.55;">Every machine gets what it needs. Nothing
+                more.</p>
+            <div class="grid grid-cols-2 gap-3 sm:grid-cols-4">
+
+                <div class="bg-surface border border-border rounded-lg p-5">
+                    <div class="mono text-[11px] text-accent uppercase tracking-widest mb-2">base</div>
+                    <div class="text-[15px] font-medium text-body mb-3">All machines</div>
+                    <div class="flex flex-col gap-1">
+                        <span class="text-xs text-dim before:content-['+_'] before:text-accent">Browser</span>
+                        <span class="text-xs text-dim before:content-['+_'] before:text-accent">File manager</span>
+                        <span class="text-xs text-dim before:content-['+_'] before:text-accent">Text editor</span>
+                        <span class="text-xs text-dim before:content-['+_'] before:text-accent">PDF reader</span>
+                        <span class="text-xs text-dim before:content-['+_'] before:text-accent">Media player</span>
+                    </div>
+                </div>
+
+                <div class="bg-surface border border-border rounded-lg p-5">
+                    <div class="mono text-[11px] text-accent uppercase tracking-widest mb-2">student</div>
+                    <div class="text-[15px] font-medium text-body mb-3">Computer labs</div>
+                    <div class="flex flex-col gap-1">
+                        <span class="text-xs text-dim before:content-['+_'] before:text-accent">Office suite</span>
+                        <span class="text-xs text-dim before:content-['+_'] before:text-accent">Graphics editor</span>
+                        <span class="text-xs text-dim before:content-['+_'] before:text-accent">Programing tools and
+                            IDEs</span>
+                        <span class="text-xs text-dim before:content-['+_'] before:text-accent">Other useful education
+                            programs</span>
+                    </div>
+                </div>
+
+                <div class="bg-surface border border-border rounded-lg p-5">
+                    <div class="mono text-[11px] text-accent uppercase tracking-widest mb-2">presentation</div>
+                    <div class="text-[15px] font-medium text-body mb-3">Projector/board</div>
+                    <div class="flex flex-col gap-1">
+                        <span class="text-xs text-dim before:content-['+_'] before:text-accent">Everything in
+                            student</span>
+                        <span class="text-xs text-dim before:content-['+_'] before:text-accent">Whiteboard
+                            software</span>
+                    </div>
+                </div>
+
+                <div class="bg-surface border border-border rounded-lg p-5">
+                    <div class="mono text-[11px] text-accent uppercase tracking-widest mb-2">teacher</div>
+                    <div class="text-[15px] font-medium text-body mb-3">Teacher PCs</div>
+                    <div class="flex flex-col gap-1">
+                        <span class="text-xs text-dim before:content-['+_'] before:text-accent">Everything in
+                            presentation</span>
+                        <span class="text-xs text-dim before:content-['+_'] before:text-accent">Classroom management
+                            software</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <hr class="border-faint">
+
+        <!-- Roadmap Section -->
+        <section class="py-16" id="roadmap">
+            <h2 class="text-2xl font-medium tracking-tighter text-body mb-3">Roadmap</h2>
+            <p class="text-base text-muted mb-10" style="line-height: 1.55;">
+                Where we are and where we are heading. Building a rock-solid system takes time.
+            </p>
+
+            <div class="flex flex-col gap-5">
+
+                <!-- Completed Item -->
+                <div class="flex gap-5 items-start">
+                    <span
+                        class="mono text-sm text-accent bg-surface border border-accent rounded px-2 py-0.5 min-w-[32px] text-center animate-pulse">»</span>
+                    <div>
+                        <h3 class="text-[15px] font-medium text-body mb-1">Base System (Fedora Atomic)</h3>
+                        <p class="text-sm text-muted" style="line-height: 1.55">
+                            Core OS image finalized with an immutable filesystem structure and basic ostree deployment.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Completed Item -->
+                <div class="flex gap-5 items-start opacity-60">
+                    <span
+                        class="mono text-sm text-dim bg-surface border border-border rounded px-2 py-0.5 min-w-[32px] text-center">·</span>
+                    <div>
+                        <h3 class="text-[15px] font-medium text-body mb-1">Profiles and .iso installer</h3>
+                        <p class="text-sm text-muted" style="line-height: 1.55">
+                            Separated packages into Base, Student, Presentation, and Teacher profiles using Flatpaks for
+                            isolation. Choose between them in the Calamares installer.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- In Progress Item -->
+                <div class="flex gap-5 items-start opacity-60">
+                    <span
+                        class="mono text-sm text-dim bg-surface border border-border rounded px-2 py-0.5 min-w-[32px] text-center">·</span>
+                    <div>
+                        <h3 class="text-[15px] font-medium text-body mb-1">Cinnamon Lite Variant</h3>
+                        <p class="text-sm text-muted" style="line-height: 1.55">
+                            Optimizing the lightweight spin specifically for older hardware (circa 2012) to bypass
+                            Windows 11 limitations.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Future Item -->
+                <div class="flex gap-5 items-start opacity-60">
+                    <span
+                        class="mono text-sm text-dim bg-surface border border-border rounded px-2 py-0.5 min-w-[32px] text-center">·</span>
+                    <div>
+                        <h3 class="text-[15px] font-medium text-body mb-1">Centralized Management Tool</h3>
+                        <p class="text-sm text-muted" style="line-height: 1.55">
+                            A simple, web-based dashboard for school IT staff to manage Active Directory easily.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="border-faint">
+        <footer class="py-10 flex items-center justify-between">
+            <span class="text-sm text-dim">eduOS - Apache 2.0 license - made in Hungary <br> website partly made with AI
+                (not the os tho)</span>
+            <div class="flex gap-5">
+                <a href="https://github.com/SzponerZoli/eduOS"
+                    class="text-sm text-dim hover:text-muted transition-colors">GitHub</a>
+                <a href="mailto:szponerzolidev@proton.me"
+                    class="text-sm text-dim hover:text-muted transition-colors">Contact</a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

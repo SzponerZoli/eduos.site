@@ -21,3 +21,6 @@ Since this is a lightweight frontend landing page, no complex build steps or ins
 1. Clone the repository:
    ```bash
    git clone [https://github.com/SzponerZoli/eduOS.git](https://github.com/SzponerZoli/eduOS.git)
+
+## 🤖 AI Usage
+The website and the readme were partially made by AI. All of the content on the website is by me, AI only partially wrote the design.

@@ -5,46 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eduOS</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Mono:wght@400;500&display=swap">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['DM Sans', 'sans-serif'],
-                        mono: ['DM Mono', 'monospace'],
-                    },
-                    colors: {
-                        bg: '#0f1117',
-                        surface: '#111520',
-                        border: '#1e2a3a',
-                        accent: '#3d6fd4',
-                        'accent-hover': '#2d5cb8',
-                        muted: '#888888',
-                        dim: '#444444',
-                        faint: '#1e1e1e',
-                        body: '#e8e8e4',
-                    },
-                    letterSpacing: {
-                        tightest: '-0.03em',
-                        tighter: '-0.02em',
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        body {
-            font-family: DM Sans, sans-serif;
-            line-height: 1.55;
-        }
-
-        .mono {
-            font-family: DM Mono, monospace;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="bg-bg text-body antialiased">
@@ -145,7 +106,7 @@
             </p>
             <div class="flex flex-col gap-6">
                 <div class="flex gap-5">
-                    <span class="mono text-sm text-accent min-w-[24px] mt-0.5">01</span>
+                    <span class="mono text-sm text-accent min-w-6 mt-0.5">01</span>
                     <div>
                         <h3 class="text-[15px] font-medium text-body mb-1">Immutable base</h3>
                         <p class="text-sm text-muted" style="line-height: 1.55">
@@ -155,7 +116,7 @@
                     </div>
                 </div>
                 <div class="flex gap-5">
-                    <span class="mono text-sm text-accent min-w-[24px] mt-0.5">02</span>
+                    <span class="mono text-sm text-accent min-w-6 mt-0.5">02</span>
                     <div>
                         <h3 class="text-[15px] font-medium text-body mb-1">Automatic updates</h3>
                         <p class="text-sm text-muted" style="line-height: 1.55">
@@ -165,7 +126,7 @@
                     </div>
                 </div>
                 <div class="flex gap-5">
-                    <span class="mono text-sm text-accent min-w-[24px] mt-0.5">03
+                    <span class="mono text-sm text-accent min-w-6 mt-0.5">03
                     </span>
                     <div>
                         <h3 class="text-[15px] font-medium text-body mb-1">Old hardware friendly</h3>
@@ -253,7 +214,7 @@
                 <!-- Completed Item -->
                 <div class="flex gap-5 items-start">
                     <span
-                        class="mono text-sm text-accent bg-surface border border-accent rounded px-2 py-0.5 min-w-[32px] text-center animate-pulse">»</span>
+                        class="mono text-sm text-accent bg-surface border border-accent rounded px-2 py-0.5 min-w-8 text-center animate-pulse">»</span>
                     <div>
                         <h3 class="text-[15px] font-medium text-body mb-1">Base System (Fedora Atomic)</h3>
                         <p class="text-sm text-muted" style="line-height: 1.55">
@@ -265,7 +226,7 @@
                 <!-- Completed Item -->
                 <div class="flex gap-5 items-start opacity-60">
                     <span
-                        class="mono text-sm text-dim bg-surface border border-border rounded px-2 py-0.5 min-w-[32px] text-center">·</span>
+                        class="mono text-sm text-dim bg-surface border border-border rounded px-2 py-0.5 min-w-8 text-center">·</span>
                     <div>
                         <h3 class="text-[15px] font-medium text-body mb-1">Profiles and .iso installer</h3>
                         <p class="text-sm text-muted" style="line-height: 1.55">
@@ -278,7 +239,7 @@
                 <!-- In Progress Item -->
                 <div class="flex gap-5 items-start opacity-60">
                     <span
-                        class="mono text-sm text-dim bg-surface border border-border rounded px-2 py-0.5 min-w-[32px] text-center">·</span>
+                        class="mono text-sm text-dim bg-surface border border-border rounded px-2 py-0.5 min-w-8 text-center">·</span>
                     <div>
                         <h3 class="text-[15px] font-medium text-body mb-1">Cinnamon Lite Variant</h3>
                         <p class="text-sm text-muted" style="line-height: 1.55">
@@ -291,7 +252,7 @@
                 <!-- Future Item -->
                 <div class="flex gap-5 items-start opacity-60">
                     <span
-                        class="mono text-sm text-dim bg-surface border border-border rounded px-2 py-0.5 min-w-[32px] text-center">·</span>
+                        class="mono text-sm text-dim bg-surface border border-border rounded px-2 py-0.5 min-w-8 text-center">·</span>
                     <div>
                         <h3 class="text-[15px] font-medium text-body mb-1">Centralized Management Tool</h3>
                         <p class="text-sm text-muted" style="line-height: 1.55">

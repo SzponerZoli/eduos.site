@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@source "../**/*";
+
+@theme {
+  /* Egyedi színek átírása v4 szintaxisra */
+  --color-bg: #0f1117;
+  --color-surface: #111520;
+  --color-border: #1e2a3a;
+  --color-accent: #3d6fd4;
+  --color-accent-hover: #2d5cb8;
+  --color-muted: #888888;
+  --color-dim: #444444;
+  --color-faint: #1e1e1e;
+  --color-body: #e8e8e4;
+
+  /* Egyedi betűtípusok */
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "DM Mono", ui-monospace, monospace;
+
+  /* Egyedi letter-spacing */
+  --tracking-tightest: -0.03em;
+  --tracking-tighter: -0.02em;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/dm-sans-v17-latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/dm-sans-v17-latin-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/dm-mono-v16-latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/dm-mono-v16-latin-500.woff2') format('woff2');
+}

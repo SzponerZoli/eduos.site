@@ -49,3 +49,6 @@ npx @tailwindcss/cli -i ./input.css -o ./css/style.css --minify
 
 This landing page is deployed on **Cloudflare Pages**. Every time you push to the `main` branch, Cloudflare automatically pulls the changes and uses the `@tailwindcss/cli` build command to compile the fresh production styles.
 ```
+
+## 🤖 AI Usage
+The website and the readme were partially made by AI. All of the content on the website is by me, AI only partially wrote the design.
